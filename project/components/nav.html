@@ -1,0 +1,27 @@
+::component::
+<nav>
+  ::children::
+</nav>
+::component::
+
+::style::
+<style>
+  nav {
+    display: flex;
+  }
+
+  nav a:not(:last-child)::after {
+    content: "·";
+    margin: 0px 5px;
+    color: white;
+  }
+
+  nav a:hover:not(:last-child)::after {
+    cursor: default;
+  }
+</style>
+::style::
+
+::script::
+
+::script::

@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Lexend';
+  src: url('/static/Lexend-Regular.ttf');
+}
+
+* {
+  --a-default-color: rgb(0, 157, 255);
+}
+
+html * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend', sans-serif;
+}
+
+body {
+  color: white;
+  background-color: black;
+
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+  height: 100vh;
+}
+
+
+
+a {
+  color: var(--a-default-color);
+  text-decoration: none;
+}
+
+/* nav {
+  display: flex;
+}
+nav a:not(:last-child)::after {
+  content: "·";
+  margin: 0px 5px;
+  color: white;
+}
+nav a:hover:not(:last-child)::after {
+  cursor: default;
+} */
+
+button:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}

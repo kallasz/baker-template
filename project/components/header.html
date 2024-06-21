@@ -1,0 +1,40 @@
+::component::
+<header>
+  <h1>baker-template</h1>
+
+  ::component project/components/nav.html as fence::
+    <a href="/">home</a>
+    <a href="/help/">help</a>
+  ::component::
+
+</header>
+::component::
+
+::style::
+<style>
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header a {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    color: white;
+  }
+
+  header img {
+    height: 30px;
+    margin: 10px;
+  }
+
+  header a:is(nav a) {
+    color: var(--a-default-color);
+  }
+</style>
+::style::

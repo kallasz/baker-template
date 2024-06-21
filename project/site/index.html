@@ -1,0 +1,31 @@
+::slot::
+<main>
+  <h1>Congrats!</h1>
+  <p>Looks like you have set up Baker successfully.</p>
+
+  <style>
+    main {
+      /* height: calc(100vh - 90px - 40px); */
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      /* align-items: center; */
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-left: 50px;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+
+    @media screen and (width < 550px) {
+      main {
+        margin-left: 0px;
+      }
+    }
+  </style>
+</main>
+::slot::
